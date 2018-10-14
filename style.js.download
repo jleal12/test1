@@ -1,0 +1,13 @@
+var otherCheckbox = documnet.querySeclector('input[value="other"');
+var otherText = document.querySelector('input[id="otherValue]"');
+otherText.style.visibitlity = 'hidden';
+
+otherCheckbox.onchange = function(){
+    if(otherCheckbox.checked){
+        otherText.style.visibitlity = 'visble';
+        otherText.value='';
+    }
+    else{
+        otherText.style.visibitlity = 'hidden';
+    }
+};
